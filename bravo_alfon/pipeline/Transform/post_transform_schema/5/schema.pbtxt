@@ -1,0 +1,30 @@
+feature {
+  name: "image_xf"
+  type: FLOAT
+  presence {
+    min_fraction: 1.0
+  }
+  shape {
+    dim {
+      size: 128
+    }
+    dim {
+      size: 128
+    }
+    dim {
+      size: 3
+    }
+  }
+}
+feature {
+  name: "label_xf"
+  type: INT
+  presence {
+    min_fraction: 1.0
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}

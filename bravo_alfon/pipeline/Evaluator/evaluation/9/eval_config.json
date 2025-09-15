@@ -1,0 +1,50 @@
+{
+  "evalConfig": {
+    "modelSpecs": [
+      {
+        "labelKey": "label_xf"
+      }
+    ],
+    "slicingSpecs": [
+      {}
+    ],
+    "metricsSpecs": [
+      {
+        "metrics": [
+          {
+            "className": "ExampleCount"
+          },
+          {
+            "className": "SparseCategoricalAccuracy",
+            "threshold": {
+              "valueThreshold": {
+                "lowerBound": 0.6
+              }
+            }
+          },
+          {
+            "className": "Precision"
+          },
+          {
+            "className": "Recall"
+          },
+          {
+            "className": "FalsePositives"
+          },
+          {
+            "className": "TruePositives"
+          }
+        ],
+        "modelNames": [
+          ""
+        ]
+      }
+    ]
+  },
+  "version": "0.42.0",
+  "dataLocation": "<user provided PCollection>",
+  "fileFormat": "<unknown>",
+  "modelLocations": {
+    "": "bravo_alfon\\pipeline\\Trainer\\model\\7\\Format-Serving"
+  }
+}
